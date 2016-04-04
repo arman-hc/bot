@@ -255,7 +255,7 @@ Persian: @IranSeed
 Realm Commands:
 
 !creategroup [name]
-Create a group
+ساخت گروه
 
 !createrealm [name]
 Create a realm
