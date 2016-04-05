@@ -264,169 +264,150 @@ Create a realm
 Set realm name
 
 !setabout [group_id] [text]
-Set a group's about text
+ایجاد درباره  گروه
 
 !setrules [grupo_id] [text]
-Set a group's rules
+ایجاد قوانین گروه
 
 !lock [grupo_id] [setting]
-Lock a group's setting
+قفل تنظیمات گروه
 
 !unlock [grupo_id] [setting]
-Unock a group's setting
+بازکردن قفل تنظیمات گروه
 
 !wholist
 Get a list of members in group/realm
 
 !who
-Get a file of members in group/realm
+لیست و آیدی همه اعضای گروه
 
 !type
 Get group type
 
 !kill chat [grupo_id]
-Kick all memebers and delete group
+اخراج تمام کاربران و پاک کردن گروه
 
 !kill realm [realm_id]
 Kick all members and delete realm
 
 !addadmin [id|username]
-Promote an admin by id OR username *Sudo only
+ارتقا کاربر به ادمین با آیدی و یوزرنیم *فقط سازنده
 
 !removeadmin [id|username]
-Demote an admin by id OR username *Sudo only
+گرفتن ادمین از کاربر با آیدی و یوزرنیم *فقط سازنده
 
 !list groups
-Get a list of all groups
+دریافت لیست تمام گروه
 
 !list realms
 Get a list of all realms
 
-!log
-Get a logfile of current group or realm
+
 
 !broadcast [text]
 !broadcast Hello !
-Send text to all groups
-» Only sudo users can run this command
+ارسال پیام به تمام گروه ها
+» فقط سازنده ربات میتواند از این دستور استفاده کند
 
 !bc [group_id] [text]
 !bc 123456789 Hello !
-This command will send text to [group_id]
+ارسال پیام فقط به گروه تعیین شده
 
-» U can use both "/" and "!" 
+» شما برای ارسال دستورات میتوانید از ! و / استفاده کنید
 
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
+»سازنده ربات:@arman_http
 
 ]],
     help_text = [[
 Commands list :
 
 !kick [username|id]
-You can also do it by reply
+اخراج کردن کاربر حتی با ریپلی
 
 !ban [ username|id]
-You can also do it by reply
+بن کردن کاربر حتی با ریپلی
 
 !unban [id]
-You can also do it by reply
+درآوردن کاربر از بن حتی با ریپلی
 
 !who
-Members list
+لیست اعضای گروه
 
 !modlist
-Moderators list
+لیست مدیران گروه
 
 !promote [username]
-Promote someone
+ایجاد ادمین جدید
 
 !demote [username]
-Demote someone
+برکنار کردن ادمین
 
 !kickme
-Will kick user
+اخراج کردن خودتان
 
 !about
-Group description
+درباره گروه
 
 !setphoto
-Set and locks group photo
+گذاشتن و قفل کردن عکس گروه
 
 !setname [name]
-Set group name
+گذاشتن و قفل نام گروه
 
 !rules
-Group rules
+قوانین گروه
 
 !id
-Return group id or user id
+آیدی کاربر مورد نظر
 
 !help
-Get commands list
+دریافت لیست دستورات
 
 !lock [member|name|bots|leave] 
-Locks [member|name|bots|leaveing] 
+قفل کردن ورود اعضای جدید/نام گروه/ورود ربات ها/خروج کابران از گروه
 
 !unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
+بازکردن قفل کردن ورود اعضای جدید/نام گروه/ورود ربات ها/خروج کابران از گروه
 
 !set rules [text]
-Set [text] as rules
+ایجاد قوانین گروه
 
 !set about [text]
-Set [text] as about
+ایجاد درباره گروه
 
 !settings
-Returns group settings
+تنظیمات فعلی گروه
 
 !newlink
-Create/revoke your group link
+دریافت لینک جدید گروه
 
 !link
-Returns group link
+لینک فعلی گروه
 
 !owner
-Returns group owner id
+آیدی ادمین فعلی گروه
 
 !setowner [id]
-Will set id as owner
+ایجاد ادمین جدید برای گروه
 
 !setflood [value]
-Set [value] as flood sensitivity
+حساسیت ربات به تعداد اسپم ها
 
 !stats
-Simple message statistics
-
-!save [value] [text]
-Save [text] as [value]
-
-!get [value]
-Returns text of [value]
+آمار کلی گروه
 
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+پاکسازی لیست مدیران/قوانین گروه/درباره گروه
 
 !res [username]
-Returns user id
-
-!log
-Will return group logs
+آیدی فعلی کاربر
 
 !banlist
-Will return group ban list
+لیست کاربران بن شده
 
-» U can use both "/" and "!" 
+» شما برای ارسال دستورات میتوانید از ! و / استفاده کنید
 
-» Only mods, owner and admin can add bots in group
-
-» Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
-
-» Only owner can use res,setowner,promote,demote and log commands
-
+» سازنده ربات:@arman_http
 ]]
   }
   serialize_to_file(config, './data/config.lua')
